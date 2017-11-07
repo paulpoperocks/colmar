@@ -1,0 +1,399 @@
+/* ================================= */
+/*         UNIVERSAL STYLES          */
+/* ================================= */
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url(../images/lined.png);
+}
+
+.flex-container {
+	display: flex;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+h3 {
+	font-family: 'Comfortaa', cursive;
+}
+
+.fa {
+	color: maroon;
+}
+
+/* ================================= */
+/*           HEADER SECTION          */
+/* ================================= */
+
+header {
+	height: 64px;
+	max-width: 1220px;
+	margin: 0 auto;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	align-items: center;
+}
+
+.title-logo {
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 24px;
+	height: 32px;
+}
+
+.title-logo p {
+	font-weight: bold;
+	color: maroon;
+}
+
+.title-logo span {
+	color: gray;
+	font-weight: lighter;
+}
+
+nav.desktop {
+	margin-right: 24px;
+	align-items: center;
+	font-size: 1.3rem;
+}
+
+nav.desktop span {
+	margin-left: 16px;
+}
+
+nav.desktop .fa {
+	font-size: 1rem;
+}
+
+nav.mobile {
+	display: none;
+}
+
+/* ================================= */
+/*           BANNER SECTION          */
+/* ================================= */
+
+#banner {
+	background-color: lightgray;
+	max-width: 1220px;
+	margin: 0 auto;
+	justify-content: flex-start;
+}
+
+#banner .main-image {
+	width: 60%;
+	margin: 32px 0 32px 24px;
+}
+
+#banner .main-image img {
+	width: 100%;
+	height: auto;
+}
+
+.banner-info {
+	flex-direction: column;
+	justify-content: center;
+	width: 25%;
+	margin-left: 24px;
+	line-height: 1.2;
+}
+
+.banner-info h1 {
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 32px;
+	font-family: 'Lobster', cursive;
+}
+
+.banner-info p {
+	margin-bottom: 24px;
+	font-size: 1.5rem;
+}
+
+.banner-info a {
+	width: 100%;
+	background-color: maroon;
+	padding: 8px 0;
+	color: white;
+	text-align: center;
+	font-size: 1.25rem;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+	border-radius: 8px;
+	transition: background-color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease,
+		box-shadow 0.1s ease;
+}
+
+.banner-info a:hover {
+	background-color: #056b05;
+	font-size: 1.3rem;
+	font-weight: bold;
+	box-shadow: none;
+}
+
+/* ================================= */
+/*       INFORMATION SECTION         */
+/* ================================= */
+
+#information {
+	max-width: 1218px;
+	margin: 0 auto;
+	background: #fff;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+.information-main {
+	width: 60%;
+	margin: 32px 24px 32px 24px;
+}
+
+.information-main h2 {
+	padding: 24px 0;
+}
+
+.information-main img {
+	width: 100%;
+}
+
+.information-main p {
+	color: gray;
+	line-height: 1.25;
+	font-size: 1.25rem;
+}
+
+.information-main p:last-child {
+	margin-top: 25px;
+	color: #000;
+}
+
+/* To course advisors: the wireframe asked for this to be 40% but the math doesn't work because the section
+with the black man's picture has to be 60%, plus there has to be margins and/or padding around the elements */
+.information-sidebar {
+	width: 35%;
+	padding-top: 18px;
+	flex-direction: column;
+}
+
+.info-boxes {
+	justify-content: flex-start;
+	padding: 16px;
+}
+
+.info-boxes .image-container {
+	width: 35%;
+}
+
+.info-boxes .image-container img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.info-boxes .image-container img.mobile {
+	display: none;
+}
+
+.info-boxes .info {
+	padding-left: 16px;
+	width: 65%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info-boxes .info h3 {
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+.info-boxes .info p {
+	margin-bottom: 8px;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	color: gray;
+}
+
+.info-boxes .info a {
+	color: blue;
+}
+
+/* ================================= */
+/*          COURSES SECTION          */
+/* ================================= */
+
+#courses {
+	flex-direction: column;
+	align-items: center;
+	max-width: 1220px;
+	margin: 0 auto;
+	background-color: lightgray;
+}
+
+#courses h2 {
+	padding: 32px 0;
+}
+
+.courses-container {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1076px;
+	margin: 0 auto;
+}
+
+.courses-container h3.mobile {
+	display: none;
+}
+
+.course {
+	max-width: 337px;
+	margin-bottom: 32px;
+	color: gray;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+	transition: box-shadow 0.2s ease 0.2s;
+}
+
+.course:hover {
+	box-shadow: none;
+}
+
+.course img {
+	width: 100%;
+}
+
+.course-info {
+	background-color: #fff;
+	padding: 16px 0 24px 16px;
+	min-height: 115px;
+}
+
+.course-info h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #bc9d0f;
+}
+
+.course-info h4 {
+	font-size: 1.1rem;
+	margin-bottom: 8px;
+}
+
+.course-info p {
+	line-height: 1.4;
+}
+
+/* ================================= */
+/*           THESIS SECTION          */
+/* ================================= */
+
+#thesis {
+	max-width: 1218px;
+	margin: 0 auto;
+	background-color: #fff;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 32px;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+#thesis h2 {
+	padding: 32px 0;
+}
+
+.thesis-info {
+	margin-left: 24px;
+}
+
+#video-container {
+	width: 60%;
+	margin-right: 24px;
+}
+
+#video-container video {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+#video-container h3 {
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+#video-container p {
+	color: gray;
+	line-height: 1.25;
+	font-size: 1.25rem;
+}
+
+.thesis-sections {
+	flex-direction: column;
+	width: 40%;
+}
+
+.thesis-section {
+	justify-content: flex-start;
+	padding: 0 16px 16px 16px;
+}
+
+.thesis-section .image-container {
+	width: 35%;
+}
+
+.thesis-section .image-container img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.thesis-section .info {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 16px;
+	width: 65%;
+}
+
+.thesis-section h3 {
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+.thesis-section .info p {
+	margin-bottom: 8px;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	color: gray;
+}
+
+/* ================================= */
+/*           FOOTER SECTION          */
+/* ================================= */
+
+footer {
+	max-width: 1220px;
+	margin: 0 auto;
+	color: gray;
+	background-color: maroon;
+	padding-bottom: 20px;
+	color: white;
+	justify-content: space-between;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer .legal, footer nav {
+	margin-top: 16px;
+}
+
+footer .legal {
+	margin-left: 24px;
+}
+
+footer nav {
+	margin-right: 24px;
+}

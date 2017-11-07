@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1025px) {
+
+	.banner-info {
+		width: 30%;
+	}
+
+	.course {
+		max-width: 33%;
+	}
+
+}
+
+@media only screen and (max-width: 725px) {
+
+	.banner-info h1 {
+		line-height: 1.80rem;
+	}
+
+	.banner-info p {
+		line-height: 1.5rem;
+	}
+
+	.banner-info {
+		padding-bottom: 20px;
+	}
+
+	.course {
+		max-width: 48%;
+		box-shadow: none;
+	}
+
+	.information-main {
+		width: 50%;
+		margin: 32px 12px 32px 12px;
+	}
+
+	.information-sidebar {
+		width: 45%;
+	}
+
+	.info-boxes .info {
+		width: 85%;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	header {
+		width: 100%;
+	}
+
+	.title-logo {
+		display: none;
+	}
+
+	nav.desktop {
+		display: none;
+	}
+
+	nav.mobile {
+		display: block;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#banner {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#banner .main-image {
+		width: 100%;
+		margin: 0;
+	}
+
+	#banner .main-image img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.banner-info {
+		width: 96%;
+		margin-left: 16px;
+		margin-top: 32px;
+		margin-bottom: 32px;
+		padding-bottom: 0;
+	}
+
+	.banner-info a {
+		width: 96%;
+	}
+
+	.information-main {
+		display: none;
+	}
+
+	.information-sidebar {
+		width: 100%;
+		margin-left: 0;
+		padding-top: 0;
+	}
+
+	.info-boxes {
+		flex-direction: column;
+	}
+
+	.info-boxes .info {
+		width: 75%;
+	}
+
+	.info-boxes .image-container {
+		width: 100%;
+	}
+
+	.info-boxes .image-container img.mobile {
+		display: block;
+	}
+
+	.info-boxes .image-container img.desktop {
+		display: none;
+	}
+
+	.info h3 {
+		margin-top: 15px;
+	}
+
+	.courses-container {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 24px; /* combined with h3.mobile margin bottom = 32px from wireframe */
+	}
+
+	.course {
+		display: none;
+	}
+
+	.courses-container h3.mobile {
+		display: block;
+		padding: 16px 16px 24px 16px;
+		background-color: #056b05;
+		color: #fff;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 8px;
+	}
+
+	.thesis-info {
+		margin-left: 0;
+		padding-bottom: 24px;
+	}
+
+	.thesis-sections {
+		display: none;
+	}
+
+	#video-container {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#video-container h3, #video-container p {
+		display: none;
+	}
+
+}
